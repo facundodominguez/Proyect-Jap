@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="site-header sticky-top py-1 bg-dark">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
+      <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
+      <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
+      <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
+      <a class="py-2 d-none d-md-inline-block" href="cart.html">Mi carrito</a>
+      <li class="dropdown">
+        <a class="py-2 d-none d-md-inline-block dropbtn" href="my-profile.html" id="profile"></a>
+        <div class="dropdown-content bg-dark">
+          <a id="logout" href="#">Salir</a>
+        </div>
+    </div>
+  </nav>
+  <main role="main">
+    <div class="container mt-5">
+      <div class="text-center p-4">
+        <h2>Descripción del producto seleccionado</h2>
+        <p class="lead">Encontrarás aquí toda la información del producto seleccionado.</p>
+      </div>
+      <hr class="my-3">
+      <h3 id="productName"></h3>
+      <hr class="my-3">
+      <dl>
+        <dt>Descripción</dt>
+        <dd>
+          <p id="productDescription"></p>
+        </dd>
+
+        <dt>Vendidos</dt>
+        <dd>
+          <p id="productCount"></p>
+        </dd>
+
+        <dt>Precio</dt>
+        <dd>
+          <p id="productCost"></p>
+        </dd>
+
+        <dt>Categorías</dt>
+        <dd>
+          <p id="productCategory"></p>
+        </dd>
+
+        <dt>Imágenes ilustrativas</dt>
+        <dd>
+          <div class="row text-center text-lg-left pt-2" id="productImagesGallery"></div>
+        </dd>
+
+        <!-- <dt>
+          <h1>Comentarios</h1>
+        </dt>
+        <hr>
+       <dd>
+          <div class="comments-container">
+            <ul id="comments-list" class="comments-list">
+              <li>
+                <div class="comment-main-level">
+                  <div class="comment-avatar"><img src="img/ceibal.png" alt=""></div>
+                  <div class="comment-box">
+                    <div class="comment-head">
+                      <h6 class="comment-name"><a href="">juan_pedro</a></h6>
+                      <span>2020-02-25 18:03:52</span>
+                      <i class="fa fa-reply"></i>
+                      <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="comment-content">
+                      Ya llevo un año con este auto y la verdad que tiene sus ventajas y desventajas
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="comment-main-level">
+                  <div class="comment-avatar"><img src="img/ceibal.png" alt=""></div>
+                  <div class="comment-box">
+                    <div class="comment-head">
+                      <h6 class="comment-name"><a href="">maria_sanchez</a></h6>
+                      <span>2020-01-17 13:42:18</span>
+                      <i class="fa fa-reply"></i>
+                      <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="comment-content">
+                      Es un auto muy cómodo y en relación precio/calidad vale la pena! </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="comment-main-level">
+                  <div class="comment-avatar"><img src="img/ceibal.png" alt=""></div>
+                  <div class="comment-box">
+                    <div class="comment-head">
+                      <h6 class="comment-name"><a href="">paola_perez</a></h6>
+                      <span>2020-03-14 09:05:13</span>
+                      <i class="fa fa-reply"></i>
+                      <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="comment-content">
+                      Casi todo bien!, excepto por algún detalle de gusto personal </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="comment-main-level">
+                  <div class="comment-avatar"><img src="img/ceibal.png" alt=""></div>
+                  <div class="comment-box">
+                    <div class="comment-head">
+                      <h6 class="comment-name"><a href="">pablo_gomez</a></h6>
+                      <span>2020-02-21 15:05:22</span>
+                      <i class="fa fa-reply"></i>
+                      <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="comment-content">
+                      Un espectáculo el auto! </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </dd>
+
+        <div class="row">
+          <div class="list-group" id="cat-list-container"></div>
+        </div>
+      </dl>
+      <a type="button" class="btn btn-light btn-lg btn-block" href="products.html">Ver productos</a>
+      <br> -->
+
+<!-- Pruebas de relacionados -->
+        <div>
+          <div>
+            <h2>Productos relacionados</h2>
+            <hr>
+            <br>
+          </div>
+          <div class="col-md-4">
+            <a href="" class="card mb-4 shadow-sm custom-card">
+              <img class="bd-placeholder-img card-img-top" src="img/prod4.jpg">
+              <h3 class="m-3">Peugeot 208</h3>
+              <div class="card-body">
+                <p class="card-text">En stock: 2</p>
+                <p class="card-text">Precio: 15200 USD</p>
+              </div>
+            </a>
+          </div>
+        </div>
+<!-- Pruebas de relacionados -->
+    </div>
+
+  </main>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
+      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+    </div>
+  </footer>
+  <div id="spinner-wrapper">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/product-info.js"></script>
+</body>
+
+</html>
