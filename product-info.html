@@ -10,6 +10,8 @@
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
@@ -57,115 +59,69 @@
 
         <dt>Categorías</dt>
         <dd>
-          <p id="productCategory"></p>
+          <a id="productCategory" href="categories.html"></a>
         </dd>
 
         <dt>Imágenes ilustrativas</dt>
         <dd>
-          <div class="row text-center text-lg-left pt-2" id="productImagesGallery"></div>
+          <div class="row text-center text-lg-left " id="productImagesGallery"></div>
         </dd>
 
-        <!-- <dt>
+        <dt>
           <h1>Comentarios</h1>
         </dt>
         <hr>
-       <dd>
-          <div class="comments-container">
-            <ul id="comments-list" class="comments-list">
-              <li>
-                <div class="comment-main-level">
-                  <div class="comment-avatar"><img src="img/ceibal.png" alt=""></div>
-                  <div class="comment-box">
-                    <div class="comment-head">
-                      <h6 class="comment-name"><a href="">juan_pedro</a></h6>
-                      <span>2020-02-25 18:03:52</span>
-                      <i class="fa fa-reply"></i>
-                      <i class="fa fa-heart"></i>
-                    </div>
-                    <div class="comment-content">
-                      Ya llevo un año con este auto y la verdad que tiene sus ventajas y desventajas
-                    </div>
-                  </div>
-                </div>
-              </li>
+        <dd>
+          <div class="comments-container" id="comments-container"></div>
+          <div class="comments-container" id="comments-new"></div>
+        </dd>
+        <hr>
+        <dd>
 
+          <form>
+            <ul class="comments-list">
               <li>
-                <div class="comment-main-level">
-                  <div class="comment-avatar"><img src="img/ceibal.png" alt=""></div>
-                  <div class="comment-box">
-                    <div class="comment-head">
-                      <h6 class="comment-name"><a href="">maria_sanchez</a></h6>
-                      <span>2020-01-17 13:42:18</span>
-                      <i class="fa fa-reply"></i>
-                      <i class="fa fa-heart"></i>
-                    </div>
-                    <div class="comment-content">
-                      Es un auto muy cómodo y en relación precio/calidad vale la pena! </div>
-                  </div>
+                <div class="comment-avatar">
+                  <img src="img/ceibal.png">
                 </div>
-              </li>
-
-              <li>
-                <div class="comment-main-level">
-                  <div class="comment-avatar"><img src="img/ceibal.png" alt=""></div>
-                  <div class="comment-box">
-                    <div class="comment-head">
-                      <h6 class="comment-name"><a href="">paola_perez</a></h6>
-                      <span>2020-03-14 09:05:13</span>
-                      <i class="fa fa-reply"></i>
-                      <i class="fa fa-heart"></i>
-                    </div>
-                    <div class="comment-content">
-                      Casi todo bien!, excepto por algún detalle de gusto personal </div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="comment-main-level">
-                  <div class="comment-avatar"><img src="img/ceibal.png" alt=""></div>
-                  <div class="comment-box">
-                    <div class="comment-head">
-                      <h6 class="comment-name"><a href="">pablo_gomez</a></h6>
-                      <span>2020-02-21 15:05:22</span>
-                      <i class="fa fa-reply"></i>
-                      <i class="fa fa-heart"></i>
-                    </div>
-                    <div class="comment-content">
-                      Un espectáculo el auto! </div>
-                  </div>
-                </div>
+                <textarea id="commentNewTextarea" class="comments-bar" name="texto" rows="2" cols="90"
+                  placeholder="Escriba tu comentario." required></textarea>
               </li>
             </ul>
-          </div>
+            <form>
+
+              <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="5">
+                <label for="radio1">★</label>
+                <input id="radio2" type="radio" name="estrellas" value="4">
+                <label for="radio2">★</label>
+                <input id="radio3" type="radio" name="estrellas" value="3">
+                <label for="radio3">★</label>
+                <input id="radio4" type="radio" name="estrellas" value="2">
+                <label for="radio4">★</label>
+                <input id="radio5" type="radio" name="estrellas" value="1" checked>
+                <label for="radio5">★</label>
+                
+              :noicacifisalC</p>
+            </form>
+
+            <button id="commentNewButton" type="button" list="lista-rango">Enviar</button>
+
+          </form>
         </dd>
 
-        <div class="row">
-          <div class="list-group" id="cat-list-container"></div>
-        </div>
+        <br>
+        <br>
+        <dt>
+          <h1>Productos relacionados</h1>
+        </dt>
+        <hr>
+        <dd>
+          <div class="row" id="related-products"></div>
+        </dd>
       </dl>
-      <a type="button" class="btn btn-light btn-lg btn-block" href="products.html">Ver productos</a>
-      <br> -->
-
-<!-- Pruebas de relacionados -->
-        <div>
-          <div>
-            <h2>Productos relacionados</h2>
-            <hr>
-            <br>
-          </div>
-          <div class="col-md-4">
-            <a href="" class="card mb-4 shadow-sm custom-card">
-              <img class="bd-placeholder-img card-img-top" src="img/prod4.jpg">
-              <h3 class="m-3">Peugeot 208</h3>
-              <div class="card-body">
-                <p class="card-text">En stock: 2</p>
-                <p class="card-text">Precio: 15200 USD</p>
-              </div>
-            </a>
-          </div>
-        </div>
-<!-- Pruebas de relacionados -->
+      <a type="button" class="btn btn-light btn-lg btn-block" href="products.html">Ver mas productos</a>
+      <br>
     </div>
 
   </main>

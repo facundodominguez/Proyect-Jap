@@ -6,10 +6,8 @@ const PRODUCT_INFO_URL = "https://japdevdep.github.io/ecommerce-api/product/5678
 const PRODUCT_INFO_COMMENTS_URL = "https://japdevdep.github.io/ecommerce-api/product/5678-comments.json";
 const CART_INFO_URL = "https://japdevdep.github.io/ecommerce-api/cart/987.json";
 const CART_BUY_URL = "https://japdevdep.github.io/ecommerce-api/cart/buy.json";
-
 var showSpinner = function(){document.getElementById("spinner-wrapper").style.display = "block";}
 var hideSpinner = function(){document.getElementById("spinner-wrapper").style.display = "none";}
-
 var getJSONData = function(url){
     var result = {};
     showSpinner();
@@ -34,8 +32,6 @@ var getJSONData = function(url){
         return result;
     });
 }
-
-
  document.addEventListener("DOMContentLoaded", function(e){
   const logoutButton = document.getElementById('logout');
   let token = localStorage.getItem('token');
@@ -44,10 +40,7 @@ var getJSONData = function(url){
     localStorage.removeItem('token');
     window.location.href = '/login'; 
   };
-
-  if(!token) {
-    window.location.href = '/login'; 
-  }
+  if(!token) {window.location.href = '/login'; }
   var storedValue = localStorage.getItem("inputEmail");
   document.getElementById("profile").innerHTML = storedValue;
 });
