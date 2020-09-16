@@ -24,11 +24,12 @@
       <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
       <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
       <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
-      <a class="py-2 d-none d-md-inline-block" href="cart.html">Mi carrito</a>
       <li class="dropdown">
         <a class="py-2 d-none d-md-inline-block dropbtn" href="my-profile.html" id="profile"></a>
         <div class="dropdown-content bg-dark">
-          <a id="logout" href="#">Salir</a>
+          <a href="my-profile.html">Mi perfil</a>
+          <a href="cart.html">Mi carrito</a>
+          <a id="logout" href="#">Cerrar sesion</a>
         </div>
     </div>
   </nav>
@@ -75,8 +76,12 @@
           <div class="comments-container" id="comments-container"></div>
           <div class="comments-container" id="comments-new"></div>
         </dd>
+        <br>
         <hr>
+        <br>
         <dd>
+          
+          <h1>Deja tu comentarios</h1>
 
           <form>
             <ul class="comments-list">
@@ -93,16 +98,16 @@
               <p class="clasificacion">
                 <input class="estrella" id="radio1" type="radio" name="estrellas" value="5">
                 <label for="radio1">★</label>
-                <input class="estrella"  id="radio2" type="radio" name="estrellas" value="4">
+                <input class="estrella" id="radio2" type="radio" name="estrellas" value="4">
                 <label for="radio2">★</label>
-                <input class="estrella"  id="radio3" type="radio" name="estrellas" value="3">
+                <input class="estrella" id="radio3" type="radio" name="estrellas" value="3">
                 <label for="radio3">★</label>
-                <input class="estrella"  id="radio4" type="radio" name="estrellas" value="2">
+                <input class="estrella" id="radio4" type="radio" name="estrellas" value="2">
                 <label for="radio4">★</label>
-                <input class="estrella"  id="radio5" type="radio" name="estrellas" value="1" checked>
+                <input class="estrella" id="radio5" type="radio" name="estrellas" value="1" checked>
                 <label for="radio5">★</label>
-                
-              :noicacifisalC</p>
+
+                :noicacifisalC</p>
             </form>
 
             <button id="commentNewButton" type="button" list="lista-rango">Enviar</button>
