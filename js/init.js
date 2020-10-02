@@ -33,4 +33,6 @@ var getJSONData = function(url){
     });
 }
  document.addEventListener("DOMContentLoaded", function(e){
+     var storedValue = localStorage.getItem("inputEmail");
+     document.getElementById("profile").innerHTML = storedValue;
 });
