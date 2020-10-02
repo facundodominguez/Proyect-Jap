@@ -11,27 +11,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
             password
         });
     };
-    
-    const checkUser = function(endpoint, userData){
-        let url = `${backUrl}${endpoint}`;
-
-        fetch(url, {
-          method: 'POST', 
-          body: JSON.stringify(userData),
-          headers:{
-            'Content-Type': 'application/json'
-          }
-        }).then(res => res.json())
-        .catch(error => {
-            console.error('Error: ', error)
-            alert('Usuario y/o contraseña incorrecta')
-        })
-        .then(response => {
-            console.log('Success:', response)
-            localStorage.setItem('token', response.token);
-            window.location.href = '/';
-        });
-    }
     document.getElementById("submitButton").addEventListener("click", function () {
 
         var email = document.getElementById("inputEmail");
